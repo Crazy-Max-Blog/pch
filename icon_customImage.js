@@ -21,16 +21,15 @@ ymaps.ready(function () {
             // Своё изображение иконки метки.
             iconImageHref: 'images/1.png',
             // Размеры метки.
-            iconImageSize: [300, 420],
+            iconImageSize: [50, 50],
             // Смещение левого верхнего угла иконки относительно
             // её "ножки" (точки привязки).
-            iconImageOffset: [-5, -38]
+            iconImageOffset: [-25, -25],
         }),
 
         myPlacemarkWithContent = new ymaps.Placemark([55.661574, 37.573856], {
             hintContent: 'Станция 1',
-            balloonContent: 'Станция 1\nПожар!',
-            iconContent: '12'
+            balloonContent: 'Станция 1\nПожар!'
         }, {
             // Опции.
             // Необходимо указать данный тип макета.
@@ -38,20 +37,19 @@ ymaps.ready(function () {
             // Своё изображение иконки метки.
             iconImageHref: 'images/3.png',
             // Размеры метки.
-            iconImageSize: [300, 420],
+            iconImageSize: [50, 50],
             // Смещение левого верхнего угла иконки относительно
             // её "ножки" (точки привязки).
-            iconImageOffset: [-24, -24],
+            iconImageOffset: [-25, -25],
             // Смещение слоя с содержимым относительно слоя с картинкой.
-            iconContentOffset: [15, 15],
+            //iconContentOffset: [15, 15],
             // Макет содержимого.
             iconContentLayout: MyIconContentLayout
         }),
 
         asd = new ymaps.Placemark([55.561574, 37.573856], {
             hintContent: 'Станция 2',
-            balloonContent: 'Станция 2\nНе потключена',
-            iconContent: '12'
+            balloonContent: 'Станция 2\nНе потключена'
         }, {
             // Опции.
             // Необходимо указать данный тип макета.
@@ -59,12 +57,32 @@ ymaps.ready(function () {
             // Своё изображение иконки метки.
             iconImageHref: 'images/2.png',
             // Размеры метки.
-            iconImageSize: [300, 420],
+            iconImageSize: [50, 50],
             // Смещение левого верхнего угла иконки относительно
             // её "ножки" (точки привязки).
-            iconImageOffset: [-24, -24],
+            iconImageOffset: [-25, -25],
             // Смещение слоя с содержимым относительно слоя с картинкой.
-            iconContentOffset: [15, 15],
+            //iconContentOffset: [15, 15],
+            // Макет содержимого.
+            iconContentLayout: MyIconContentLayout
+        })
+
+        qwe = new ymaps.Placemark([55.461574, 37.573856], {
+            hintContent: 'Станция 3',
+            balloonContent: 'Станция 3\nРаботает'
+        }, {
+            // Опции.
+            // Необходимо указать данный тип макета.
+            iconLayout: 'default#imageWithContent',
+            // Своё изображение иконки метки.
+            iconImageHref: 'images/4.png',
+            // Размеры метки.
+            iconImageSize: [50, 50],
+            // Смещение левого верхнего угла иконки относительно
+            // её "ножки" (точки привязки).
+            iconImageOffset: [-25, -25],
+            // Смещение слоя с содержимым относительно слоя с картинкой.
+            //iconContentOffset: [15, 15],
             // Макет содержимого.
             iconContentLayout: MyIconContentLayout
         });
@@ -72,5 +90,6 @@ ymaps.ready(function () {
     myMap.geoObjects
         .add(myPlacemark)
         .add(asd)
+        .add(qwe)
         .add(myPlacemarkWithContent);
 });
