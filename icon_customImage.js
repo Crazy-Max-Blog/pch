@@ -21,7 +21,7 @@ ymaps.ready(function () {
             // Своё изображение иконки метки.
             iconImageHref: 'images/1.png',
             // Размеры метки.
-            iconImageSize: [120, 168],
+            iconImageSize: [300, 420],
             // Смещение левого верхнего угла иконки относительно
             // её "ножки" (точки привязки).
             iconImageOffset: [-5, -38]
@@ -38,7 +38,7 @@ ymaps.ready(function () {
             // Своё изображение иконки метки.
             iconImageHref: 'images/3.png',
             // Размеры метки.
-            iconImageSize: [120, 168],
+            iconImageSize: [300, 420],
             // Смещение левого верхнего угла иконки относительно
             // её "ножки" (точки привязки).
             iconImageOffset: [-24, -24],
@@ -59,7 +59,7 @@ ymaps.ready(function () {
             // Своё изображение иконки метки.
             iconImageHref: 'images/2.png',
             // Размеры метки.
-            iconImageSize: [120, 168],
+            iconImageSize: [300, 420],
             // Смещение левого верхнего угла иконки относительно
             // её "ножки" (точки привязки).
             iconImageOffset: [-24, -24],
